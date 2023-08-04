@@ -145,6 +145,7 @@ var (
 	*/
 	SecClassGenericPassword  SecClass = 1
 	SecClassInternetPassword SecClass = 2
+	SecClassCertificate      SecClass = 3
 )
 
 // SecClassKey is the key type for SecClass
@@ -152,6 +153,7 @@ var SecClassKey = attrKey(C.CFTypeRef(C.kSecClass))
 var secClassTypeRef = map[SecClass]C.CFTypeRef{
 	SecClassGenericPassword:  C.CFTypeRef(C.kSecClassGenericPassword),
 	SecClassInternetPassword: C.CFTypeRef(C.kSecClassInternetPassword),
+	SecClassCertificate:      C.CFTypeRef(C.kSecClassCertificate),
 }
 
 var (
