@@ -145,7 +145,8 @@ var (
 	*/
 	SecClassGenericPassword  SecClass = 1
 	SecClassInternetPassword SecClass = 2
-	SecClassCertificate      SecClass = 3
+
+	SecClassCertificate SecClass = 3
 )
 
 // SecClassKey is the key type for SecClass
